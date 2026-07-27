@@ -1,0 +1,1 @@
+(()=>{const s=document.querySelector('#sidebar'),t=document.querySelector('#sidebarToggle'),n=document.querySelector('#newChat');t?.addEventListener('click',()=>s.classList.toggle('open'));n?.addEventListener('click',()=>location.reload());document.addEventListener('keydown',e=>{if((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k'){e.preventDefault();location.reload()}})})();
