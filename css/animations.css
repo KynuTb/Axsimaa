@@ -1,0 +1,1 @@
+@keyframes enter{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}.hero-section,.demo-shell,.features,.api-banner{animation:enter .7s both}.demo-shell{animation-delay:.12s}.features{animation-delay:.18s}.api-banner{animation-delay:.24s}.button,.feature-grid article{transition:transform .2s,border-color .2s}.button:hover{transform:translateY(-2px)}
