@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Вход — Axsima</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+<main class="auth-card">
+<a class="brand" href="index.html">
+<b>✦</b>Axsima</a>
+<h1 id="authTitle">С возвращением</h1>
+<p id="authSubtitle">Войдите, чтобы открыть свои чаты.</p>
+<div class="oauth-list">
+<button type="button" class="oauth-button" data-oauth="google"><span class="oauth-icon" aria-hidden="true"></span><span>Продолжить с <b>Google</b></span><span class="oauth-arrow" aria-hidden="true">→</span></button>
+<button type="button" class="oauth-button" data-oauth="discord"><span class="oauth-icon" aria-hidden="true"></span><span>Продолжить с <b>Discord</b></span><span class="oauth-arrow" aria-hidden="true">→</span></button>
+<button type="button" class="oauth-button" data-oauth="github"><span class="oauth-icon" aria-hidden="true"></span><span>Продолжить с <b>GitHub</b></span><span class="oauth-arrow" aria-hidden="true">→</span></button>
+</div>
+<div class="auth-divider">
+<span>Или продолжить по Email</span>
+</div>
+<form id="authForm">
+<label>Email<input name="email" type="email" autocomplete="email" required>
+</label>
+<label>Пароль<input name="password" type="password" autocomplete="current-password" minlength="8" required>
+</label>
+<label id="passwordConfirmField" hidden>Подтверждение пароля<input name="confirmPassword" type="password" autocomplete="new-password" minlength="8">
+</label>
+<p class="auth-error" data-auth-error hidden role="alert">
+</p>
+<button class="auth-submit" type="submit">Войти</button>
+</form>
+<button class="auth-switch" id="authMode" type="button">Нет аккаунта? Зарегистрироваться</button>
+</main>
+<script type="module">import { setupAuthPage } from './js/auth.js'; setupAuthPage();</script>
+</body>
+</html>
