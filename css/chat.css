@@ -9,6 +9,7 @@
 .chat-search input{border:0;outline:0;width:100%;background:none;color:#dce0eb;font-size:12px}
 .history{overflow:auto;scrollbar-width:none}
 .history p{font:10px var(--mono);letter-spacing:.1em;color:#687087;margin:17px 9px 8px}
+.history p.history-empty{letter-spacing:0;text-transform:none;font:12px var(--mono);line-height:1.5;margin-top:18px;color:#8992a9}
 .history-item{width:100%;padding:9px;border:0;border-radius:6px;background:none;color:#aeb5c7;text-align:left;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:12px;cursor:pointer}
 .history-item:hover,.history-item.active{background:#ffffff0a;color:#f2f3f8}
 .history-item i{float:right;font-style:normal;letter-spacing:-1px}
@@ -89,4 +90,3 @@
 .toggle input:checked+i{background:#7169e7}
 .toggle i:after{content:'';position:absolute;width:12px;height:12px;top:3px;left:3px;border-radius:50%;background:#fff;transition:.2s}
 .toggle input:checked+i:after{left:17px}
-
